@@ -1,0 +1,310 @@
+All functions
+6
+printInt
+printStr
+maximum
+minimum
+absolute
+main
+
+SYMBOL TABLES:
+
+____________________________________________________________________________________________________________________________________________________
+Table Name: Global                                                 Parent Name: NULL
+____________________________________________________________________________________________________________________________________________________
+Name                                     Type                           Category             Initial Value        Size            Offset          Nested
+                                                                                                     
+printInt                                 func                           function                                 0               0               printInt
+printStr                                 func                           function                                 0               0               printStr
+maximum                                  func                           function                                 0               0               maximum
+minimum                                  func                           function                                 0               0               minimum
+absolute                                 func                           function                                 0               0               absolute
+main                                     func                           function                                 0               0               main
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+____________________________________________________________________________________________________________________________________________________
+Table Name: printInt                                               Parent Name: Global
+____________________________________________________________________________________________________________________________________________________
+Name                                     Type                           Category             Initial Value        Size            Offset          Nested
+                                                                                                     
+return                                   int                            local                                    4               0               NULL
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+____________________________________________________________________________________________________________________________________________________
+Table Name: printStr                                               Parent Name: Global
+____________________________________________________________________________________________________________________________________________________
+Name                                     Type                           Category             Initial Value        Size            Offset          Nested
+                                                                                                     
+p                                        ptr(char)                      param                                    8               0               NULL
+return                                   int                            local                                    4               8               NULL
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+____________________________________________________________________________________________________________________________________________________
+Table Name: maximum                                                Parent Name: Global
+____________________________________________________________________________________________________________________________________________________
+Name                                     Type                           Category             Initial Value        Size            Offset          Nested
+                                                                                                     
+x                                        int                            param                                    4               0               NULL
+y                                        int                            param                                    4               4               NULL
+return                                   int                            local                                    4               8               NULL
+ans                                      int                            local                                    4               12              NULL
+t_1                                      int                            temp                                     4               16              NULL
+t_2                                      int                            temp                                     4               20              NULL
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+____________________________________________________________________________________________________________________________________________________
+Table Name: minimum                                                Parent Name: Global
+____________________________________________________________________________________________________________________________________________________
+Name                                     Type                           Category             Initial Value        Size            Offset          Nested
+                                                                                                     
+x                                        int                            param                                    4               0               NULL
+y                                        int                            param                                    4               4               NULL
+return                                   int                            local                                    4               8               NULL
+ans                                      int                            local                                    4               12              NULL
+t_3                                      int                            temp                                     4               16              NULL
+t_4                                      int                            temp                                     4               20              NULL
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+____________________________________________________________________________________________________________________________________________________
+Table Name: absolute                                               Parent Name: Global
+____________________________________________________________________________________________________________________________________________________
+Name                                     Type                           Category             Initial Value        Size            Offset          Nested
+                                                                                                     
+x                                        int                            param                                    4               0               NULL
+return                                   int                            local                                    4               4               NULL
+t_5                                      int                            temp                0                    4               8               NULL
+t_6                                      int                            temp                                     4               12              NULL
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+____________________________________________________________________________________________________________________________________________________
+Table Name: main                                                   Parent Name: Global
+____________________________________________________________________________________________________________________________________________________
+Name                                     Type                           Category             Initial Value        Size            Offset          Nested
+                                                                                                     
+return                                   int                            local                                    4               0               NULL
+x                                        int                            local                                    4               4               NULL
+t_7                                      int                            temp                5                    4               8               NULL
+t_8                                      int                            temp                                     4               12              NULL
+y                                        int                            local               4                    4               16              NULL
+t_9                                      int                            temp                4                    4               20              NULL
+ans1                                     int                            local                                    4               24              NULL
+t_10                                     int                            temp                                     4               28              NULL
+t_11                                     NA                             temp                "absolute("          0               32              NULL
+t_12                                     int                            temp                                     4               32              NULL
+t_13                                     int                            temp                                     4               36              NULL
+t_14                                     NA                             temp                ") = "               0               40              NULL
+t_15                                     int                            temp                                     4               40              NULL
+t_16                                     int                            temp                                     4               44              NULL
+t_17                                     NA                             temp                "\n"                 0               48              NULL
+t_18                                     int                            temp                                     4               48              NULL
+ans2                                     int                            local                                    4               52              NULL
+t_19                                     int                            temp                                     4               56              NULL
+t_20                                     NA                             temp                "absolute("          0               60              NULL
+t_21                                     int                            temp                                     4               60              NULL
+t_22                                     int                            temp                                     4               64              NULL
+t_23                                     NA                             temp                ") = "               0               68              NULL
+t_24                                     int                            temp                                     4               68              NULL
+t_25                                     int                            temp                                     4               72              NULL
+t_26                                     NA                             temp                "\n"                 0               76              NULL
+t_27                                     int                            temp                                     4               76              NULL
+ans3                                     int                            local                                    4               80              NULL
+t_28                                     int                            temp                                     4               84              NULL
+t_29                                     NA                             temp                "Testing the minimum function\n" 0               88              NULL
+t_30                                     int                            temp                                     4               88              NULL
+t_31                                     NA                             temp                "minimum("           0               92              NULL
+t_32                                     int                            temp                                     4               92              NULL
+t_33                                     int                            temp                                     4               96              NULL
+t_34                                     NA                             temp                ", "                 0               100             NULL
+t_35                                     int                            temp                                     4               100             NULL
+t_36                                     int                            temp                                     4               104             NULL
+t_37                                     NA                             temp                ") = "               0               108             NULL
+t_38                                     int                            temp                                     4               108             NULL
+t_39                                     int                            temp                                     4               112             NULL
+t_40                                     NA                             temp                "\n"                 0               116             NULL
+t_41                                     int                            temp                                     4               116             NULL
+ans4                                     int                            local                                    4               120             NULL
+t_42                                     int                            temp                                     4               124             NULL
+t_43                                     NA                             temp                "Testing the maximum function\n" 0               128             NULL
+t_44                                     int                            temp                                     4               128             NULL
+t_45                                     NA                             temp                "maximum("           0               132             NULL
+t_46                                     int                            temp                                     4               132             NULL
+t_47                                     int                            temp                                     4               136             NULL
+t_48                                     NA                             temp                ", "                 0               140             NULL
+t_49                                     int                            temp                                     4               140             NULL
+t_50                                     int                            temp                                     4               144             NULL
+t_51                                     NA                             temp                ") = "               0               148             NULL
+t_52                                     int                            temp                                     4               148             NULL
+t_53                                     int                            temp                                     4               152             NULL
+t_54                                     NA                             temp                "\n"                 0               156             NULL
+t_55                                     int                            temp                                     4               156             NULL
+t_56                                     NA                             temp                "Testing a simple for loop\n" 0               160             NULL
+t_57                                     int                            temp                                     4               160             NULL
+b                                        int                            local               0                    4               164             NULL
+t_58                                     int                            temp                0                    4               168             NULL
+t_59                                     NA                             temp                "LOOP \n"            0               172             NULL
+t_60                                     int                            temp                                     4               172             NULL
+t_70                                     int                            temp                0                    4               176             NULL
+i                                        int                            local               0                    4               180             NULL
+t_61                                     int                            temp                0                    4               184             NULL
+t_62                                     int                            temp                5                    4               188             NULL
+t_63                                     NA                             temp                "b = "               0               192             NULL
+t_64                                     int                            temp                                     4               192             NULL
+b                                        int                            local                                    4               196             NULL
+t_65                                     int                            temp                                     4               200             NULL
+t_66                                     NA                             temp                "		"                 0               204             NULL
+t_67                                     int                            temp                                     4               204             NULL
+t_68                                     int                            temp                                     4               208             NULL
+t_69                                     int                            temp                                     4               212             NULL
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+____________________________________________________________________________________________________________________________________________________
+THREE ADDRESS CODE (TAC): 
+____________________________________________________________________________________________________________________________________________________
+
+0: function maximum: 
+1:     if x < y goto 3
+2:     goto 5
+3:     t_1 = y
+4:     goto 6
+5:     t_1 = x
+6:     ans = t_1
+7:     return ans
+
+9: function minimum: 
+10:     if x > y goto 12
+11:     goto 14
+12:     t_3 = y
+13:     goto 15
+14:     t_3 = x
+15:     ans = t_3
+16:     return ans
+
+18: function absolute: 
+19:     t_5 = 0
+20:     if x < t_5 goto 22
+21:     goto 25
+22:     t_6 = -x
+23:     return t_6
+24:     goto 26
+25:     return x
+
+27: function main: 
+28:     t_7 = 5
+29:     t_8 = -t_7
+30:     x = t_8
+31:     t_9 = 4
+32:     y = t_9
+33:     param x
+34:     t_10 = call absolute, 1
+35:     ans1 = t_10
+36:     t_11 = "absolute("
+37:     param t_11
+38:     t_12 = call printStr, 1
+39:     param x
+40:     t_13 = call printInt, 1
+41:     t_14 = ") = "
+42:     param t_14
+43:     t_15 = call printStr, 1
+44:     param ans1
+45:     t_16 = call printInt, 1
+46:     t_17 = "\n"
+47:     param t_17
+48:     t_18 = call printStr, 1
+49:     param y
+50:     t_19 = call absolute, 1
+51:     ans2 = t_19
+52:     t_20 = "absolute("
+53:     param t_20
+54:     t_21 = call printStr, 1
+55:     param y
+56:     t_22 = call printInt, 1
+57:     t_23 = ") = "
+58:     param t_23
+59:     t_24 = call printStr, 1
+60:     param ans2
+61:     t_25 = call printInt, 1
+62:     t_26 = "\n"
+63:     param t_26
+64:     t_27 = call printStr, 1
+65:     param x
+66:     param y
+67:     t_28 = call minimum, 2
+68:     ans3 = t_28
+69:     t_29 = "Testing the minimum function\n"
+70:     param t_29
+71:     t_30 = call printStr, 1
+72:     t_31 = "minimum("
+73:     param t_31
+74:     t_32 = call printStr, 1
+75:     param x
+76:     t_33 = call printInt, 1
+77:     t_34 = ", "
+78:     param t_34
+79:     t_35 = call printStr, 1
+80:     param y
+81:     t_36 = call printInt, 1
+82:     t_37 = ") = "
+83:     param t_37
+84:     t_38 = call printStr, 1
+85:     param ans3
+86:     t_39 = call printInt, 1
+87:     t_40 = "\n"
+88:     param t_40
+89:     t_41 = call printStr, 1
+90:     param x
+91:     param y
+92:     t_42 = call maximum, 2
+93:     ans4 = t_42
+94:     t_43 = "Testing the maximum function\n"
+95:     param t_43
+96:     t_44 = call printStr, 1
+97:     t_45 = "maximum("
+98:     param t_45
+99:     t_46 = call printStr, 1
+100:     param x
+101:     t_47 = call printInt, 1
+102:     t_48 = ", "
+103:     param t_48
+104:     t_49 = call printStr, 1
+105:     param y
+106:     t_50 = call printInt, 1
+107:     t_51 = ") = "
+108:     param t_51
+109:     t_52 = call printStr, 1
+110:     param ans4
+111:     t_53 = call printInt, 1
+112:     t_54 = "\n"
+113:     param t_54
+114:     t_55 = call printStr, 1
+115:     t_56 = "Testing a simple for loop\n"
+116:     param t_56
+117:     t_57 = call printStr, 1
+118:     t_58 = 0
+119:     b = t_58
+120:     t_59 = "LOOP \n"
+121:     param t_59
+122:     t_60 = call printStr, 1
+
+123: Label main$FOR$0: 
+124:     t_61 = 0
+125:     i = t_61
+126:     t_62 = 5
+127:     if i < t_62 goto 131
+128:     goto 142
+129:     i = i + 1
+130:     goto 126
+131:     t_63 = "b = "
+132:     param t_63
+133:     t_64 = call printStr, 1
+134:     param b
+135:     t_65 = call printInt, 1
+136:     t_66 = "		"
+137:     param t_66
+138:     t_67 = call printStr, 1
+139:     t_68 = b + i
+140:     b = t_68
+141:     goto 129
+142:     t_70 = 0
+143:     return t_70
+____________________________________________________________________________________________________________________________________________________

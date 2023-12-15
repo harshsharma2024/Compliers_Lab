@@ -1,0 +1,169 @@
+All functions
+3
+printInt
+printStr
+main
+
+SYMBOL TABLES:
+
+____________________________________________________________________________________________________________________________________________________
+Table Name: Global                                                 Parent Name: NULL
+____________________________________________________________________________________________________________________________________________________
+Name                                     Type                           Category             Initial Value        Size            Offset          Nested
+                                                                                                     
+printInt                                 func                           function                                 0               0               printInt
+printStr                                 func                           function                                 0               0               printStr
+f                                        float                          local               5.67                 4               0               NULL
+t_1                                      float                          temp                5.67                 4               4               NULL
+arr                                      arr(8,int)                     local                                    32              8               NULL
+t_2                                      int                            temp                8                    4               40              NULL
+b                                        int                            local                                    4               44              NULL
+t_3                                      int                            temp                4                    4               48              NULL
+t_4                                      int                            temp                                     4               52              NULL
+c                                        ptr(int)                       local                                    8               56              NULL
+d                                        int                            local                                    4               64              NULL
+ch                                       char                           local                                    1               68              NULL
+a                                        ptr(int)                       local                                    8               69              NULL
+main                                     func                           function                                 0               77              main
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+____________________________________________________________________________________________________________________________________________________
+Table Name: printInt                                               Parent Name: Global
+____________________________________________________________________________________________________________________________________________________
+Name                                     Type                           Category             Initial Value        Size            Offset          Nested
+                                                                                                     
+return                                   int                            local                                    4               0               NULL
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+____________________________________________________________________________________________________________________________________________________
+Table Name: printStr                                               Parent Name: Global
+____________________________________________________________________________________________________________________________________________________
+Name                                     Type                           Category             Initial Value        Size            Offset          Nested
+                                                                                                     
+ch                                       ptr(char)                      param                                    8               0               NULL
+return                                   int                            local                                    4               8               NULL
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+____________________________________________________________________________________________________________________________________________________
+Table Name: main                                                   Parent Name: Global
+____________________________________________________________________________________________________________________________________________________
+Name                                     Type                           Category             Initial Value        Size            Offset          Nested
+                                                                                                     
+return                                   int                            local                                    4               0               NULL
+p                                        int                            local                                    4               4               NULL
+q                                        int                            local                                    4               8               NULL
+r                                        int                            local                                    4               12              NULL
+s                                        int                            local                                    4               16              NULL
+flt                                      float                          local               4.78                 4               20              NULL
+t_5                                      float                          temp                4.78                 4               24              NULL
+sum                                      int                            local               0                    4               28              NULL
+t_6                                      int                            temp                0                    4               32              NULL
+CH                                       char                           local               'A'                  1               36              NULL
+t_7                                      char                           temp                'A'                  1               37              NULL
+t_8                                      NA                             temp                "Hello World\n"      0               38              NULL
+t_9                                      int                            temp                                     4               38              NULL
+i                                        int                            local               24                   4               42              NULL
+t_10                                     int                            temp                24                   4               46              NULL
+n                                        int                            local               8                    4               50              NULL
+t_11                                     int                            temp                8                    4               54              NULL
+a1                                       int                            local                                    4               58              NULL
+t_12                                     int                            temp                                     4               62              NULL
+a3                                       int                            local                                    4               66              NULL
+t_13                                     int                            temp                3                    4               70              NULL
+t_14                                     int                            temp                                     4               74              NULL
+a4                                       int                            local                                    4               78              NULL
+t_15                                     int                            temp                3                    4               82              NULL
+t_16                                     int                            temp                                     4               86              NULL
+a5                                       int                            local                                    4               90              NULL
+t_17                                     int                            temp                3                    4               94              NULL
+t_18                                     int                            temp                                     4               98              NULL
+t_19                                     int                            temp                                     4               102             NULL
+t_20                                     NA                             temp                "* 3 = "             0               106             NULL
+t_21                                     int                            temp                                     4               106             NULL
+t_22                                     int                            temp                                     4               110             NULL
+t_23                                     NA                             temp                "\n"                 0               114             NULL
+t_24                                     int                            temp                                     4               114             NULL
+t_25                                     int                            temp                                     4               118             NULL
+t_26                                     NA                             temp                "/ 3 = "             0               122             NULL
+t_27                                     int                            temp                                     4               122             NULL
+t_28                                     int                            temp                                     4               126             NULL
+t_29                                     NA                             temp                "\n"                 0               130             NULL
+t_30                                     int                            temp                                     4               130             NULL
+t_31                                     int                            temp                                     4               134             NULL
+t_32                                     NA                             temp                "- 3 = "             0               138             NULL
+t_33                                     int                            temp                                     4               138             NULL
+t_34                                     int                            temp                                     4               142             NULL
+t_35                                     NA                             temp                "\n"                 0               146             NULL
+t_36                                     int                            temp                                     4               146             NULL
+t_37                                     int                            temp                0                    4               150             NULL
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+____________________________________________________________________________________________________________________________________________________
+THREE ADDRESS CODE (TAC): 
+____________________________________________________________________________________________________________________________________________________
+0:     t_1 = 5.67
+1:     f = t_1
+2:     t_2 = 8
+3:     t_3 = 4
+4:     t_4 = -t_3
+5:     b = t_4
+
+6: function main: 
+7:     t_5 = 4.78
+8:     flt = t_5
+9:     t_6 = 0
+10:     sum = t_6
+11:     t_7 = 'A'
+12:     CH = t_7
+13:     t_8 = "Hello World\n"
+14:     param t_8
+15:     t_9 = call printStr, 1
+16:     t_10 = 24
+17:     i = t_10
+18:     t_11 = 8
+19:     n = t_11
+20:     t_12 = i + n
+21:     a1 = t_12
+22:     t_13 = 3
+23:     t_14 = a1 * t_13
+24:     a3 = t_14
+25:     t_15 = 3
+26:     t_16 = a1 / t_15
+27:     a4 = t_16
+28:     t_17 = 3
+29:     t_18 = a1 - t_17
+30:     a5 = t_18
+31:     param a1
+32:     t_19 = call printInt, 1
+33:     t_20 = "* 3 = "
+34:     param t_20
+35:     t_21 = call printStr, 1
+36:     param a3
+37:     t_22 = call printInt, 1
+38:     t_23 = "\n"
+39:     param t_23
+40:     t_24 = call printStr, 1
+41:     param a1
+42:     t_25 = call printInt, 1
+43:     t_26 = "/ 3 = "
+44:     param t_26
+45:     t_27 = call printStr, 1
+46:     param a4
+47:     t_28 = call printInt, 1
+48:     t_29 = "\n"
+49:     param t_29
+50:     t_30 = call printStr, 1
+51:     param a1
+52:     t_31 = call printInt, 1
+53:     t_32 = "- 3 = "
+54:     param t_32
+55:     t_33 = call printStr, 1
+56:     param a5
+57:     t_34 = call printInt, 1
+58:     t_35 = "\n"
+59:     param t_35
+60:     t_36 = call printStr, 1
+61:     t_37 = 0
+62:     return t_37
+____________________________________________________________________________________________________________________________________________________

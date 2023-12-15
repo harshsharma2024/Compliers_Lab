@@ -1,0 +1,12 @@
+#define KEYWORD 1
+#define IDENTIFIER 2
+#define CONSTANT 3
+#define STRLIT 4
+#define PUNC 5
+#define MULTI_LINE_COMMENT 6
+#define SINGLE_LINE_COMMENT 7
+#define OTHERS 8
+#define WS 9
+#define INT_CONST 10
+#define FLT_CONST 11
+#define CHAR_CONST 12

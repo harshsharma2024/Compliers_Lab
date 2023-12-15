@@ -1,0 +1,140 @@
+All functions
+3
+printInt
+printStr
+main
+
+SYMBOL TABLES:
+
+____________________________________________________________________________________________________________________________________________________
+Table Name: Global                                                 Parent Name: NULL
+____________________________________________________________________________________________________________________________________________________
+Name                                     Type                           Category             Initial Value        Size            Offset          Nested
+                                                                                                     
+printInt                                 func                           function                                 0               0               printInt
+printStr                                 func                           function                                 0               0               printStr
+main                                     func                           function                                 0               0               main
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+____________________________________________________________________________________________________________________________________________________
+Table Name: printInt                                               Parent Name: Global
+____________________________________________________________________________________________________________________________________________________
+Name                                     Type                           Category             Initial Value        Size            Offset          Nested
+                                                                                                     
+return                                   int                            local                                    4               0               NULL
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+____________________________________________________________________________________________________________________________________________________
+Table Name: printStr                                               Parent Name: Global
+____________________________________________________________________________________________________________________________________________________
+Name                                     Type                           Category             Initial Value        Size            Offset          Nested
+                                                                                                     
+p                                        ptr(char)                      param                                    8               0               NULL
+return                                   int                            local                                    4               8               NULL
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+____________________________________________________________________________________________________________________________________________________
+Table Name: main                                                   Parent Name: Global
+____________________________________________________________________________________________________________________________________________________
+Name                                     Type                           Category             Initial Value        Size            Offset          Nested
+                                                                                                     
+return                                   int                            local                                    4               0               NULL
+t_1                                      NA                             temp                "Testing if else statements with Logical Operators \n" 0               4               NULL
+t_2                                      int                            temp                                     4               4               NULL
+t_3                                      NA                             temp                "Testing branch intruction\n" 0               8               NULL
+t_4                                      int                            temp                                     4               8               NULL
+x                                        int                            local               707                  4               12              NULL
+t_5                                      int                            temp                707                  4               16              NULL
+t_6                                      int                            temp                                     4               20              NULL
+t_7                                      int                            temp                707                  4               24              NULL
+t_10                                     int                            temp                707                  4               28              NULL
+t_13                                     int                            temp                500                  4               32              NULL
+t_14                                     int                            temp                999                  4               36              NULL
+t_19                                     int                            temp                900                  4               40              NULL
+t_20                                     int                            temp                800                  4               44              NULL
+t_25                                     int                            temp                0                    4               48              NULL
+t_8                                      NA                             temp                " == Correct \n"     0               52              NULL
+t_9                                      int                            temp                                     4               52              NULL
+t_11                                     NA                             temp                " == Incorrect \n"   0               56              NULL
+t_12                                     int                            temp                                     4               56              NULL
+t_15                                     NA                             temp                " > , < Correct \n"  0               60              NULL
+t_16                                     int                            temp                                     4               60              NULL
+t_17                                     NA                             temp                "  > , < Correct \n" 0               64              NULL
+t_18                                     int                            temp                                     4               64              NULL
+t_21                                     NA                             temp                " || Correct\n"      0               68              NULL
+t_22                                     int                            temp                                     4               68              NULL
+t_23                                     NA                             temp                " || Incorrect\n"    0               72              NULL
+t_24                                     int                            temp                                     4               72              NULL
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+____________________________________________________________________________________________________________________________________________________
+THREE ADDRESS CODE (TAC): 
+____________________________________________________________________________________________________________________________________________________
+
+0: function main: 
+1:     t_1 = "Testing if else statements with Logical Operators \n"
+2:     param t_1
+3:     t_2 = call printStr, 1
+4:     t_3 = "Testing branch intruction\n"
+5:     param t_3
+6:     t_4 = call printStr, 1
+7:     t_5 = 707
+8:     x = t_5
+9:     param x
+10:     t_6 = call printInt, 1
+11:     t_7 = 707
+12:     if x == t_7 goto 14
+13:     goto 19
+
+14: Label main$$0: 
+15:     t_8 = " == Correct \n"
+16:     param t_8
+17:     t_9 = call printStr, 1
+18:     goto 19
+19:     t_10 = 707
+20:     if x != t_10 goto 22
+21:     goto 27
+
+22: Label main$$1: 
+23:     t_11 = " == Incorrect \n"
+24:     param t_11
+25:     t_12 = call printStr, 1
+26:     goto 42
+27:     t_13 = 500
+28:     if x > t_13 goto 30
+29:     goto 38
+30:     t_14 = 999
+31:     if x < t_14 goto 33
+32:     goto 38
+
+33: Label main$$2: 
+34:     t_15 = " > , < Correct \n"
+35:     param t_15
+36:     t_16 = call printStr, 1
+37:     goto 42
+
+38: Label main$$3: 
+39:     t_17 = "  > , < Correct \n"
+40:     param t_17
+41:     t_18 = call printStr, 1
+42:     t_19 = 900
+43:     if x > t_19 goto 48
+44:     goto 45
+45:     t_20 = 800
+46:     if x < t_20 goto 48
+47:     goto 53
+
+48: Label main$$4: 
+49:     t_21 = " || Correct\n"
+50:     param t_21
+51:     t_22 = call printStr, 1
+52:     goto 57
+
+53: Label main$$5: 
+54:     t_23 = " || Incorrect\n"
+55:     param t_23
+56:     t_24 = call printStr, 1
+57:     t_25 = 0
+58:     return t_25
+____________________________________________________________________________________________________________________________________________________
